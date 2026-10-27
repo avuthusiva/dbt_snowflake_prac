@@ -1,0 +1,10 @@
+dbt_snowflake:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: ACCOUNTADMIN
+      warehouse: MY_WAREHOUSE
+      database: MY_DB
+      schema: MY_SCHEMA
+      threads: 8
